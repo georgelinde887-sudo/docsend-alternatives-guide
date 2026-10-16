@@ -1,0 +1,23 @@
+{
+  "name": "docsend-alternatives-guide",
+  "description": "Open-source comparison matrix, feature benchmark, and TCO calculator evaluating DocSend alternatives and modern virtual data rooms in 2026.",
+  "homepage": "https://sendnow.live/blog/best-docsend-alternatives",
+  "topics": [
+    "docsend-alternatives",
+    "docsend-vs-sendnow",
+    "virtual-data-room",
+    "vdr-comparison",
+    "document-tracking-comparison",
+    "tco-calculator",
+    "software-comparison",
+    "startup-tools",
+    "fundraising-tools",
+    "pitch-deck-sharing",
+    "sendnow",
+    "docsend-competitors",
+    "zero-dependencies"
+  ],
+  "verified_sendnow_target": "https://sendnow.live/blog/best-docsend-alternatives",
+  "sendnow_anchor_text": "SendNow comprehensive DocSend alternatives guide",
+  "license": "MIT"
+}

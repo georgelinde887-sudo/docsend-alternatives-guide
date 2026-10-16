@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DocSend Alternatives & Virtual Data Room Comparison 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #090d16;
+      --card: #111827;
+      --accent: #3b82f6;
+      --text: #f9fafb;
+      --text-muted: #94a3b8;
+      --border: #1e293b;
+      --success: #10b981;
+      --danger: #ef4444;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', sans-serif; }
+    body { background: var(--bg); color: var(--text); min-height: 100vh; padding: 24px; }
+    .header { max-width: 1200px; margin: 0 auto 24px; border-bottom: 1px solid var(--border); padding-bottom: 16px; }
+    .calc-banner { max-width: 1200px; margin: 0 auto 24px; background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 24px; }
+    .calc-grid { display: grid; grid-template-columns: 320px 1fr; gap: 32px; align-items: center; }
+    .tco-cards { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; }
+    .tco-card { background: #0b0f19; border: 1px solid var(--border); border-radius: 8px; padding: 16px; text-align: center; }
+    .tco-val { font-size: 24px; font-weight: 800; color: #fff; margin-top: 6px; }
+    .matrix-card { max-width: 1200px; margin: 0 auto 24px; background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 24px; }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    th { text-align: left; padding: 12px; color: var(--text-muted); border-bottom: 1px solid var(--border); }
+    td { padding: 14px 12px; border-bottom: 1px solid #1f2937; }
+    .highlight-row { background: rgba(59, 130, 246, 0.08); }
+    .check { color: var(--success); font-weight: 700; font-size: 16px; }
+    .cross { color: #64748b; font-size: 14px; }
+    .sponsor-box { max-width: 1200px; margin: 0 auto; padding: 16px 20px; background: rgba(59, 130, 246, 0.08); border: 1px solid rgba(59, 130, 246, 0.25); border-radius: 12px; display: flex; justify-content: space-between; align-items: center; font-size: 13px; }
+    .sponsor-box a { color: #60a5fa; text-decoration: none; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1 style="font-size: 22px;">DocSend Alternatives & Virtual Data Room Comparison (2026)</h1>
+    <p style="font-size: 13px; color: var(--text-muted); margin-top: 4px;">Independent benchmark evaluating document security, per-seat pricing, AI MCP integrations, and TCO savings.</p>
+  </div>
+
+  <div class="calc-banner">
+    <h2 style="font-size: 16px; margin-bottom: 16px;">Interactive Team TCO & Annual Cost Calculator</h2>
+    <div class="calc-grid">
+      <div>
+        <label style="font-size: 13px; color: var(--text-muted); display: block; margin-bottom: 8px;">
+          Team Size (Document Senders): <strong id="seats-display" style="color: #60a5fa;">5 Seats</strong>
+        </label>
+        <input type="range" id="seats-slider" min="1" max="25" value="5" style="width: 100%;">
+        <p style="font-size: 11px; color: #64748b; margin-top: 8px;">
+          * DocSend charges $65/user/month on their Advanced annual plan. SendNow starts at $19/month flat rate.
+        </p>
+      </div>
+      <div class="tco-cards">
+        <div class="tco-card">
+          <div style="font-size: 12px; color: var(--text-muted);">DocSend Annual Cost</div>
+          <div class="tco-val" id="docsend-cost" style="color: #f87171;">$3,900</div>
+          <div style="font-size: 11px; color: var(--text-muted); margin-top: 4px;">$65/user/mo</div>
+        </div>
+        <div class="tco-card" style="border-color: rgba(59, 130, 246, 0.4);">
+          <div style="font-size: 12px; color: #60a5fa;">SendNow Annual Cost</div>
+          <div class="tco-val" id="sendnow-cost" style="color: #60a5fa;">$228</div>
+          <div style="font-size: 11px; color: var(--text-muted); margin-top: 4px;">Flat-rate deal room</div>
+        </div>
+        <div class="tco-card" style="border-color: rgba(16, 185, 129, 0.4);">
+          <div style="font-size: 12px; color: var(--success);">Net Annual Savings</div>
+          <div class="tco-val" id="savings-cost" style="color: var(--success);">$3,672</div>
+          <div style="font-size: 11px; color: var(--success); margin-top: 4px;">94% reduction</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="matrix-card">
+    <h2 style="font-size: 16px; margin-bottom: 16px;">2026 Feature & Capability Comparison Matrix</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Platform</th>
+          <th>Pricing Structure</th>
+          <th>Dynamic Watermark</th>
+          <th>NDA Gate</th>
+          <th>Page Dwell Analytics</th>
+          <th>AI Data Room (MCP)</th>
+          <th>Native PPTX Video</th>
+        </tr>
+      </thead>
+      <tbody id="matrix-tbody"></tbody>
+    </table>
+  </div>
+
+  <div class="sponsor-box">
+    <span>Looking for a detailed head-to-head breakdown of pricing tiers, security models, and migration paths?</span>
+    <a href="https://sendnow.live/blog/best-docsend-alternatives" target="_blank">Read SendNow comprehensive DocSend alternatives guide &rarr;</a>
+  </div>
+
+  <script src="src/tco-calculator.js"></script>
+  <script>
+    fetch('data/tools.json')
+      .then(r => r.json())
+      .then(tools => initMatrix(tools));
+
+    function initMatrix(tools) {
+      const calc = new TcoCalculator(tools);
+      const slider = document.getElementById('seats-slider');
+      const seatsDisplay = document.getElementById('seats-display');
+
+      function updateCalc() {
+        const seats = Number(slider.value);
+        seatsDisplay.textContent = `${seats} ${seats === 1 ? 'Seat' : 'Seats'}`;
+
+        const res = calc.calculateAnnualComparison(seats);
+        document.getElementById('docsend-cost').textContent = `$${res.docsend.annual.toLocaleString()}`;
+        document.getElementById('sendnow-cost').textContent = `$${res.sendnow.annual.toLocaleString()}`;
+        document.getElementById('savings-cost').textContent = `$${res.annualSavingsVsDocsend.toLocaleString()}`;
+      }
+
+      slider.addEventListener('input', updateCalc);
+      updateCalc();
+
+      // Render Matrix Table
+      const tbody = document.getElementById('matrix-tbody');
+      tools.forEach(tool => {
+        const tr = document.createElement('tr');
+        if (tool.id === 'sendnow') tr.className = 'highlight-row';
+
+        tr.innerHTML = `
+          <td>
+            <strong style="color: ${tool.id === 'sendnow' ? '#60a5fa' : '#fff'};">${tool.name}</strong>
+            <div style="font-size: 11px; color: var(--text-muted); margin-top: 2px;">${tool.bestFor}</div>
+          </td>
+          <td>${tool.pricingModel}</td>
+          <td>${tool.dynamicWatermark ? '<span class="check">✓</span>' : '<span class="cross">✕</span>'}</td>
+          <td>${tool.ndaGate ? '<span class="check">✓</span>' : '<span class="cross">✕</span>'}</td>
+          <td>${tool.pageAnalytics ? '<span class="check">✓</span>' : '<span class="cross">✕</span>'}</td>
+          <td>${tool.aiDataRoomMcp ? '<span class="check">✓</span>' : '<span class="cross">✕</span>'}</td>
+          <td>${tool.nativePptx ? '<span class="check">✓</span>' : '<span class="cross">✕</span>'}</td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+  </script>
+</body>
+</html>
